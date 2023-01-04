@@ -21,9 +21,9 @@ const CharacterList = () => {
     },[])
     
   return (
-    <div className='container>
+    <div className='container'>
         {
-            loading ? (<h1>Loading</h1> ): (
+            loading ? (<h1 className='d-flex justify-content-center '>Loading...</h1> ): (
                 <div className='row'>
                     {characters.map((character)=>{
                         return(
