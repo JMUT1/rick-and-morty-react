@@ -1,9 +1,10 @@
 
 const Character = ({character}) => {
   return (
-    <div>
-        <h2>{character.name}</h2>
-        <img src={character.image} alt={character.name} />
+    <div className="text-center  p-5">
+        <h3>{character.name}</h3>
+        <img className="img-fluid rounded-pill" src={character.image} alt={character.name} />
+        <h5 className="my-3"> Origin: {character.origin.name}</h5>
     </div>
   )
 }
